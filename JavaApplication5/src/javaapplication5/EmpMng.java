@@ -12,25 +12,26 @@ public class EmpMng extends JFrame implements ActionListener {
     { 
        setLayout(null) ;
        
-       JLabel heading = new JLabel("Wells-Fargo Management System");
-       heading.setBounds(50,30,1200,60);
-      // heading.setForeground(Color.YELLOW);
-       heading.setFont(new Font("serif",Font.PLAIN,80));
-       add(heading);
+       
        
     ImageIcon i1 = new ImageIcon(ClassLoader.getSystemResource("icons/home.jpg"));
-       Image i2 = i1.getImage().getScaledInstance(1100, 700, Image.SCALE_DEFAULT);
+       Image i2 = i1.getImage().getScaledInstance(1170, 650, Image.SCALE_DEFAULT);
        ImageIcon i3= new ImageIcon(i2);
        JLabel image = new JLabel(i3);
-       image.setBounds(50,100,1050,500);
+       image.setBounds(0,0,1170,650);
        add(image);
+       JLabel heading = new JLabel("Wells-Fargo Management System");
+       heading.setBounds(150,30,1200,90);
+      heading.setForeground(Color.WHITE);
+       heading.setFont(new Font("serif",Font.PLAIN,70));
+       image.add(heading);
       
     
     JButton clickhere = new JButton("Click Here to Continue");
-    clickhere.setBounds(400, 300, 300, 70);
-    clickhere.setBackground(Color.YELLOW);
-    clickhere.setForeground(Color.BLACK);
-    clickhere.setFont(new Font("serif",Font.PLAIN,20));
+    clickhere.setBounds(400, 400, 300, 70);
+    clickhere.setBackground(Color.BLACK);
+    clickhere.setForeground(Color.WHITE);
+    clickhere.setFont(new Font("roman_baseline",Font.PLAIN,20));
     clickhere.addActionListener(this);
     add(clickhere);
     
