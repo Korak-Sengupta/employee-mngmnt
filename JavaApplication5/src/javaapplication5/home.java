@@ -73,7 +73,8 @@ public class home extends JFrame implements ActionListener  {
       }
       else
       {
-          
+        setVisible(false);
+          new remove();  
       }
     }
     
